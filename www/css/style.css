@@ -1,0 +1,107 @@
+/* Empty. Add your own CSS if you like */
+
+a:link {
+	text-decoration: none;
+}
+a:visited {
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: none;
+}
+a:active {
+	text-decoration: none;
+}
+
+/* slide 관련 css */
+.slider {
+  height:100%;
+}
+
+.slider-slide {
+  padding-top: 80px;
+  color: #000;
+  background-color: #fff;
+  text-align: center;
+
+  font-weight: 300;
+}
+
+#page_title{
+	margin-top: 20px;
+}
+#page_content{
+	margin: 0px 20px 0px 20px;
+	text-align: left;
+}
+
+#logo {
+  margin:0px;
+  width:80%;
+  text-align: center;
+}
+
+
+#list {
+  width: 80%;
+  margin: 30px auto;
+  font-size: 15px;
+}
+
+#list ol {
+  margin-top: 20px;
+}
+
+#list ol li {
+  text-align: left;
+  list-style: decimal;
+  margin: 10px 0px;
+}
+
+.button.ng-hide{
+  display:none;
+}
+
+/* slide 관련 css */
+
+/* home 용 이미지 */
+.col {
+	width:100%;
+	border: white; 
+	border-style: solid; 
+	border-width: thin; 
+	padding: 10px;
+	padding-top: 50px; 
+	margin: 0px;
+	min-height: 120px;
+	font-size:x-large;
+	font-weight: 100;
+	color:white;
+	text-align:center;
+	vertical-align: middle;
+	background-position: center center;
+ }
+
+ #back{
+	 background-color: white;
+	 height: 100%;
+ }
+ 
+ #title1{
+	 text-align: center;
+ }
+ 
+#container {
+	display: table;
+	width: 100%;
+	 #position: relative; 
+	 overflow: hidden;
+}
+
+#margin_zero {
+	margin-top : 0px;
+	margin-bottom: 0px;
+	padding-top: 0px;
+	padding-bottom: 0px;
+}
+

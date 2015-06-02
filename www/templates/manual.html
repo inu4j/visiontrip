@@ -1,0 +1,18 @@
+
+
+<ion-view view-title="{{ 'manual_title' | translate}}" ng-controller="ManualCtrl">
+      <ion-slide-box on-slide-changed="slideChanged(index)" >
+
+          <ion-slide ng-repeat="ManualCtrl in information">
+		  	<ion-content>
+	            <h3 id="page_title">{{ManualCtrl.title}}</h3>
+				<div><img src='{{ManualCtrl.img}}' align="middle" width="80%"></div>
+				<div id="list">
+		            <p id="page_content" ng-bind-html="ManualCtrl.content">
+					</p>
+					</div>
+              </ion-content>
+          </ion-slide>
+         
+        </ion-slide-box>
+</ion-view>

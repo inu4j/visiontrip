@@ -1,0 +1,31 @@
+<style type="text/css">
+.praise_item{
+ padding-top:5px;
+ padding-bottom:5px;
+ padding-left: 10px;
+ font-size: large;
+}
+
+.praise_top{
+	padding:20px;
+	padding-top: 30px;
+	text-align:center;
+	height:100px;
+	background: center center;
+	background-image: url('./img/praise_top.jpg');
+}
+
+</style>
+
+<ion-view view-title="{{ 'praise_title' | translate}}" ng-load="init()" >
+  <ion-content>
+<div class="praise_top">하나님을 찬양합시다.</div>
+
+<ion-list>
+  <ion-item  ng-repeat="playlist in playlists" class="praise_item" href="#/app/playlists/{{playlist.id}}">
+       {{playlist.title}}
+  </ion-item>
+
+</ion-list>
+  </ion-content>
+</ion-view>

@@ -1,0 +1,21 @@
+
+<ion-view view-title="Praise">
+
+  <ion-content >
+    <div class="list card">
+      <div class="item item-image" >
+         <img src='img/song_{{song_no}}.jpg' >    // {no}는 앞 list에서 선택한 ID 악보
+      </div>
+
+      <a class="item item-icon-left assertive" href="#" ng-click="songplay()" ng-if="btn_play">
+        <i class="icon ion-music-note"></i>
+        Play Praise
+      </a>
+      <a class="item item-icon-left assertive" href="#" ng-click="songstop()" ng-if="btn_stop">
+        <i class="icon ion-stop"></i>
+        Stop
+      </a>
+	</div>    
+  </ion-content>
+</ion-view>
+

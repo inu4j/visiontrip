@@ -1,0 +1,53 @@
+{
+      "set_language": "English",
+      "home_title":"Home",
+      "gospel_title":"Speaking Gospel",
+      "praise_title":"Praise",
+      "language_title":"Conversation",
+      "language_lang1":[
+            {"myLang": "Hello.", "lang_sound":"쭘 리어 쑤어. 쑤어쓰 데이", "id" : 1},
+            {"myLang": "Nice to meet you", "lang_sound":"릭 리나 데일 반쭙 니악.", "id" : 2},
+            {"myLang": "What's your name?", "lang_sound":"따으 니악 쯔무어 아웨이?", "id" : 3},
+            {"myLang": "My name is OOO.", "lang_sound":"크뇸 쯔무어 OO.", "id" : 4},
+            {"myLang": "How are you?", "lang_sound":"쏙 쌉빠이 찌아 데이?", "id" : 5},
+            {"myLang": "Yes, I'm fine.", "lang_sound":"빳 쏙 쌉빠이 찌아 데이.", "id" : 6},
+            {"myLang": "I'm sorry.", "lang_sound":"쏨 또으.", "id" : 7},
+            {"myLang": "That's all right.", "lang_sound":"먼 에이 떼.", "id" : 8},
+            {"myLang": "Thank you.", "lang_sound":"어꼰.", "id" : 9},
+            {"myLang": "Yes / No.", "lang_sound":"남(빳) / (여)짜", "id" : 10},
+            {"myLang": "Where is the bathroom?", "lang_sound":"따으 번똡뜨윽 너으 에나?", "id" : 11},
+            {"myLang": "What is this?", "lang_sound":"따으 니스 찌아웨이?", "id" : 12},
+            {"myLang": "Where you live?", "lang_sound":"따으 니악 로우스 너으 에나?", "id" : 13},
+            {"myLang": "How much is it?", "lang_sound":"따으 아니스 틀라이 번만?", "id" : 14},
+            {"myLang": "What do you think? / Good.", "lang_sound":"야앙 메잊 데이?/ 라어 나스.", "id" : 15},
+            {"myLang": "I'm from South Korea.", "lang_sound":"크뇸 머억 삐 쁘러떼이 꼬래.", "id" : 16},
+            {"myLang": "Please give me some water.", "lang_sound":"쏨 뜨윽 냠 번띠잊.", "id" : 17},
+            {"myLang": "See you then also.", "lang_sound":"쭈업 끄니아 뻬일 끄로어이.", "id" : 18},
+            {"myLang": "How old are you?", "lang_sound":"따으 니악 아육 번만?", "id" : 19},
+            {"myLang": "I'm OO years old.", "lang_sound":"크뇸 아육 00쯔남.", "id" : 20}
+            ],      
+      "language_lang2":[
+            {"myLang": "예수님 믿으세요.", "lang_sound":"쏨 쯔어 프리아 예수.", "id": 21},
+            {"myLang": "기도해주세요.", "lang_sound":"쏨 아틱탄 아우이 크뇸 펑.", "id": 22},
+            {"myLang": "기도해줄게요.", "lang_sound":"크뇸 능 아틱탄 아우이 니악.", "id": 23},
+            {"myLang": "나는 예수님을 사랑해요.", "lang_sound":"크뇸 스럴라잉 프리아 예수.", "id": 24},
+            {"myLang": "예수님이 당신을 사랑합니다.", "lang_sound":"프리아 예수 스럴라잉 니악.", "id": 25},
+            {"myLang": "하나님이 우리를 위해 세상을 만드셨습니다.", "lang_sound":"프리아 벙 까읏 펜데이 머억 다음 바이 뿌억 요응.", "id": 26},
+            {"myLang": "예수님을 믿으면 항상 행복해요.", "lang_sound":"쯔아 프라아 예수 능 또뚜얼 빤 피압 릭리아으 끄러업 뻬일, ", "id": 27},
+            {"myLang": "우리는 당신에게 하나님의 사랑을 나누기 위해 이곳에 왔습니다.", "lang_sound":"뿌억 크뇸 머억 띠니스 따음바이 쩨익짜이 끄데이 스럴라잉 로버스 프리아 더얼 니악.", "id": 28},
+            {"myLang": "당신을 축복합니다.", "lang_sound":"쏨 프리아 프러띠안 뽀더얼 니악.", "id": 29}
+            ],
+      "language_lang3":[
+            {"myLang": "예수님 안에서 생명이 있습니다.", "lang_sound":"너으 크농 프리아 예수 미언 찌 워엇.", "id": 30},
+            {"myLang": "사람은 죄로 인해 죽을 수밖에 없습니다.", "lang_sound":"더우이싸 엄빠으 빠압 모누스 끄 끼잊 먼폿 삐 세잊 끄데이 슬랍.", "id": 31},
+            {"myLang": "예수님 믿으면 죄의 문제가 해결됩니다.", "lang_sound":"쯔아 프리아 예수 능 루엊 폿삐 엄 빠으 빠압. ", "id": 32},
+            {"myLang": "예수님 믿으면 천국에 갈 수 있습니다.", "lang_sound":"쯔아 프리아 예수 능 바안 또우 탄쑤어. ", "id": 33},
+            {"myLang": "예수님께서 고쳐주실 거예요.", "lang_sound":"프리아 예수크리스 능 프찌아 바알 네악.", "id": 34}
+            ],
+
+      "contry_title":"Contry",
+      "manual_title":"VisionTrip Manual",
+      "setting_title": "Setting",
+      "setting_title_s1" : "General Setting",
+      "setting_lang" : "Language Setting"
+  }

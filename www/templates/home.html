@@ -1,0 +1,63 @@
+
+
+<ion-view view-title="Cambodia VisionTrip" id="back"> 
+  <ion-content ng-controller="HomeCtrl">
+
+<!--
+<div class="list list-inset"   style="margin-top:5px;margin-bottom:3px;">
+  <label class="item item-input">
+    <i class="icon ion-search placeholder-icon"></i>
+    <input type="text" placeholder="Search" >
+  </label>
+</div>
+-->
+<!-- 
+<div id="container">
+<a nav-clear menu-close href="#/app/gospel">
+	<div class="row" id="margin_zero" >
+		<div class="col" style="background-image:url('img/home_1.jpg')" > 
+			{{"gospel_title" | translate}}
+		</div>
+	</div>
+</a>
+
+<a nav-clear menu-close href="#/app/playlists">
+	<div class="row" id="margin_zero" >
+		<div class="col" style="background-image:url('img/home_2.jpg')" > 
+			{{"praise_title" | translate}}
+		</div>
+	</div>
+</a>
+
+<a nav-clear menu-close href="#/app/language">
+	<div class="row" id="margin_zero" >
+		<div class="col" style="background-image:url('img/home_3.jpg')" > 
+			{{"language_title" | translate}}
+		</div>
+	</div>
+</a>
+
+<a nav-clear menu-close href="#/app/contry">
+	<div class="row" id="margin_zero" >
+		<div class="col" style="background-image:url('img/home_4.jpg')" > 
+			{{"contry_title" | translate}}
+		</div>
+	</div>
+</a>
+
+<a nav-clear menu-close href="#/app/manual">
+	<div class="row" id="margin_zero" >
+		<div class="col" style="background-image:url('img/home_5.jpg')" > 
+			{{"manual_title" | translate}}
+		</div>
+	</div>
+</a>
+ -->
+<a ng-repeat="HomeCtrl in menu" nav-clear menu-close href="#/app/{{HomeCtrl.link}}">
+  <div class="row" id="margin_zero">
+    <div class="col" style="background-image:url('{{HomeCtrl.img}}')"> {{HomeCtrl.title}}</div>
+  </div>
+</a>
+
+  </ion-content>
+</ion-view>

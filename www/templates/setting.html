@@ -1,0 +1,30 @@
+<ion-view view-title="{{ 'setting_title' | translate}}">
+  <ion-content ng-controller="SettingCtrl">
+
+<div class="list">
+	<ion-list>
+    	<div class="item item-divider"> 
+       	 {{"setting_title_s1" | translate}}
+    	</div> 
+ 	<label class="item item-input item-select">
+    	<div class="input-label">
+         {{"setting_lang" | translate}}
+    	</div>
+    	<select ng-model="myLanguage" ng-options="lang.value for lang in langs" ng-change="change_lang(myLanguage.key)">
+    	</select>
+  	</label>
+    
+    </ion-list>
+
+<!--     {{myLanguage.value}}
+ -->
+    <br>
+
+    {{sel_text}}
+
+    <br>
+
+</div>
+
+  </ion-content>
+</ion-view>

@@ -1,0 +1,19 @@
+
+
+<ion-view view-title="국가정보" ng-controller="ContryCtrl">
+      <ion-slide-box on-slide-changed="slideChanged(index)" >
+
+          <ion-slide ng-repeat="ContryCtrl in information">
+		  	<ion-content>
+	            <h3 id="page_title">{{ContryCtrl.title}}</h3>
+				<div><img src='{{ContryCtrl.img}}' align="middle" width="80%"></div>
+				<div id="list">
+		            <p id="page_content" ng-bind-html="ContryCtrl.content">
+					</p>
+				</div>
+
+              </ion-content>
+          </ion-slide>
+         
+        </ion-slide-box>
+</ion-view>
