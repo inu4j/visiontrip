@@ -65,22 +65,7 @@ a:active {
 /* slide 관련 css */
 
 /* home 용 이미지 */
-.col {
-	width:100%;
-	border: white; 
-	border-style: solid; 
-	border-width: thin; 
-	padding: 10px;
-	padding-top: 50px; 
-	margin: 0px;
-	min-height: 120px;
-	font-size:x-large;
-	font-weight: 100;
-	color:white;
-	text-align:center;
-	vertical-align: middle;
-	background-position: center center;
- }
+
 
  #back{
 	 background-color: white;

@@ -4,6 +4,7 @@
 // 'starter' is the name of this angular module example (also set in a <body> attribute in index.html)
 // the 2nd parameter is an array of 'requires'
 // 'starter.controllers' is found in controllers.js
+
 angular.module('starter', ['ionic', 'starter.controllers', 'ngCordova', 'ngCookies','pascalprecht.translate'])
 
 .run(function($ionicPlatform, $translate, $translateLocalStorage ) {
@@ -35,22 +36,23 @@ angular.module('starter', ['ionic', 'starter.controllers', 'ngCordova', 'ngCooki
     function ($ionicPlatform, $translate, $translateLocalStorage) {
 
      $ionicPlatform.ready(function() {
-      if ( $translateLocalStorage.get() == null ) {
-
+      if ( $translateLocalStorage.get() == "undefined" || $translateLocalStorage.get() == null ) {
        if(typeof navigator.globalization !== "undefined") {
           navigator.globalization.getPreferredLanguage(function(language) {
-            alert(language.value);
+            // alert(language.value);
+  console.log("Device Lang = " + language.value);        
             $translate.use(language.value).then(function(data){
-
             }, function(error){
-              alert("Not support your language");
+               alert("Not support your language");
               $translate.use('en-US');
             });
           }, null);
-        };
-       } else {
-         console.log("Use LocalStorage");
+        } else {
+  console.log("get Lang Fail = en-US");
+  $translate.use('en-US');
+        
         }
+       } 
      });
 }])
 
@@ -61,14 +63,13 @@ angular.module('starter', ['ionic', 'starter.controllers', 'ngCordova', 'ngCooki
     suffix: '.json'
   });
 
-
   // for (lang in trans){
   //    $translateProvider.translations(lang, trans[lang]);    
   //  }
 
   // $translateProvider.preferredLanguage("ko_KR");
     // remember language
-
+  // console.log("Set LocalStorage");
   $translateProvider.useLocalStorage();
   $translateProvider.useSanitizeValueStrategy('escaped');
 
@@ -189,7 +190,6 @@ angular.module('starter', ['ionic', 'starter.controllers', 'ngCordova', 'ngCooki
       }
     }
   });
-
 
   // if none of the above states are matched, use this as the fallback
   $urlRouterProvider.otherwise('/app/home');

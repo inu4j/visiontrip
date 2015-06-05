@@ -1,6 +1,8 @@
 {
       "set_language": "English",
       "home_title":"Home",
+      "home_slidetext_1" : "<b>The Passion</b> for the Gospel",
+      "home_slidetext_2" : "<b>VisionTrip</b> is the time to see them<br> to preach the Gospel.",
       "gospel_title":"Speaking Gospel",
       "praise_title":"Praise",
       "language_title":"Conversation",
@@ -47,7 +49,7 @@
 
       "contry_title":"Contry",
       "manual_title":"VisionTrip Manual",
-      "setting_title": "Setting",
+      "setting_title": "Language Setting",
       "setting_title_s1" : "General Setting",
       "setting_lang" : "Language Setting"
   }

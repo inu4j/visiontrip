@@ -1,63 +1,81 @@
+<style type="text/css">
+#home_slide_img{
+	height:290px;
+	width:100%;
+	background: center center;
+	background-size: 100% 290px;
 
+}
+#home_slide_text{
+	margin-top: 170px;
+	color : white;
+	font-size: 18px;
+	text-shadow: 2px 2px 2px black;
+}
+
+.row_margin{
+	margin: 0px;
+	padding: 0px;
+}
+
+#custom_col {
+	width: 33%;
+	border: #dddddd; 
+	border-style: solid; 
+	border-width: 1px; 
+	padding-top: 20px; 
+	margin: 1px 1px 5px 1px !important;
+	min-height: 120px;
+	font-size:15px;
+	font-weight: 800;
+	line-height: 17px;
+	color:#888888;
+	text-align:center !important;
+ }
+
+.my-icon:before,
+.my-icon{
+  font-size:50px !important;
+  display:block !important;
+  margin-bottom: 10px;
+}
+</style>
 
 <ion-view view-title="Cambodia VisionTrip" id="back"> 
   <ion-content ng-controller="HomeCtrl">
 
-<!--
-<div class="list list-inset"   style="margin-top:5px;margin-bottom:3px;">
-  <label class="item item-input">
-    <i class="icon ion-search placeholder-icon"></i>
-    <input type="text" placeholder="Search" >
-  </label>
-</div>
--->
-<!-- 
-<div id="container">
-<a nav-clear menu-close href="#/app/gospel">
-	<div class="row" id="margin_zero" >
-		<div class="col" style="background-image:url('img/home_1.jpg')" > 
-			{{"gospel_title" | translate}}
-		</div>
-	</div>
-</a>
 
-<a nav-clear menu-close href="#/app/playlists">
-	<div class="row" id="margin_zero" >
-		<div class="col" style="background-image:url('img/home_2.jpg')" > 
-			{{"praise_title" | translate}}
-		</div>
-	</div>
-</a>
+ <ion-slide-box>
+        
+      <ion-slide  id="margin_zero">
+        <div class="item item-image" id="home_slide_img" style="background-image: url('./img/home_img_1.jpg')" >
+	        <br><br>
+			<p id="home_slide_text" ng-bind-html="'home_slidetext_1' | translate"></p>
 
-<a nav-clear menu-close href="#/app/language">
-	<div class="row" id="margin_zero" >
-		<div class="col" style="background-image:url('img/home_3.jpg')" > 
-			{{"language_title" | translate}}
-		</div>
-	</div>
-</a>
+         </div>
+      </ion-slide>    
+     
+      <ion-slide  id="margin_zero">
+        <div class="item item-image" id="home_slide_img" style="background-image: url('./img/home_img_2.jpg')" >
+			<p id="home_slide_text" ng-bind-html="'home_slidetext_2' | translate"></p>
+        </div>
+      </ion-slide>    
+  </ion-slide-box>
 
-<a nav-clear menu-close href="#/app/contry">
-	<div class="row" id="margin_zero" >
-		<div class="col" style="background-image:url('img/home_4.jpg')" > 
-			{{"contry_title" | translate}}
-		</div>
-	</div>
-</a>
+  <div class="row row_margin" >
+	  <a class="button button-block button-light" id="custom_col"href="#/app/gospel" menu-close ><i class="icon ion-ios-heart my-icon" style="color:#ffbfbf"></i>{{"gospel_title" | translate}}</a>
 
-<a nav-clear menu-close href="#/app/manual">
-	<div class="row" id="margin_zero" >
-		<div class="col" style="background-image:url('img/home_5.jpg')" > 
-			{{"manual_title" | translate}}
-		</div>
-	</div>
-</a>
- -->
-<a ng-repeat="HomeCtrl in menu" nav-clear menu-close href="#/app/{{HomeCtrl.link}}">
-  <div class="row" id="margin_zero">
-    <div class="col" style="background-image:url('{{HomeCtrl.img}}')"> {{HomeCtrl.title}}</div>
-  </div>
-</a>
+  	  <a class="button button-block button-light" id="custom_col" href="#/app/praylists" menu-close ><i class="icon ion-ios-musical-notes my-icon"  style="color:#ffd88d"></i>{{"praise_title" | translate}}</a>
+	  <a class="button button-block button-light" id="custom_col" href="#/app/language" menu-close ><i class="icon ion-ios-chatbubble my-icon"  style="color:#b9e9ff"></i>{{"language_title" | translate}}</a>
+ </div>	
+
+  <div class="row row_margin" >
+	  <a class="button button-block button-light" id="custom_col"href="#/app/contry" menu-close ><i class="icon ion-clipboard my-icon"  style="color:#bcffa1"></i>{{"contry_title" | translate}}</a>
+
+  	  <a class="button button-block button-light" id="custom_col" href="#/app/manual" menu-close ><i class="icon ion-ios-paper my-icon"   style="color:#c7cbff"></i>{{"manual_title" | translate}}</a>
+	  <a class="button button-block button-light" id="custom_col" href="#/app/setting" menu-close ><i class="icon ion-gear-a my-icon"  style="color:#f9c7ff"></i>{{"setting_title" | translate}}</a>
+ </div>	
+<p align="center" style="font-size:9px;color:#aaaaaa;margin-top:5px;">Copyright &#64; FMnC &amp; INU4J  |  Version 1.1.1</p>
 
   </ion-content>
 </ion-view>

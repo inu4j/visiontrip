@@ -1,9 +1,10 @@
 <ion-side-menus enable-menu-with-back-views="false">
-  <ion-side-menu-content>
+  <ion-side-menu-content> 
     <ion-nav-bar class="bar-dark nav-title-slide-ios7">
-      <ion-nav-back-button>
+      <ion-nav-back-button >
       </ion-nav-back-button>
-      <ion-nav-buttons side="left">
+
+      <ion-nav-buttons side="left" >
         <button class="button button-icon button-clear ion-navicon"  menu-toggle="left" ng-click="all_sound_stop()">
         </button>
       </ion-nav-buttons>
@@ -25,13 +26,13 @@
          <i class="ion-earth"></i> &nbsp; {{"home_title" | translate}}          
         </ion-item>
         <ion-item nav-clear menu-close href="#/app/gospel">
-          <i class="ion-heart"></i> &nbsp; {{"gospel_title" | translate}}
+          <i class="ion-ios-heart"></i> &nbsp; {{"gospel_title" | translate}}
         </ion-item>
         <ion-item nav-clear menu-close href="#/app/playlists">
           <i class="ion-ios-musical-notes"></i> &nbsp; {{"praise_title" | translate}}
         </ion-item>
         <ion-item nav-clear menu-close href="#/app/language">
-         <i class="ion-chatboxes"></i> &nbsp; {{"language_title" | translate}}
+         <i class="ion-ios-chatbubble"></i> &nbsp; {{"language_title" | translate}}
         </ion-item>
         <ion-item nav-clear menu-close href="#/app/contry">
           <i class="ion-clipboard"></i> &nbsp; {{"contry_title" | translate}}
@@ -41,7 +42,7 @@
         </ion-item>
 
         <ion-item nav-clear menu-close href="#/app/setting">
-         <i class="ion-ios-paper"></i> &nbsp; {{"setting_title" | translate}}
+         <i class="ion-gear-a"></i> &nbsp; {{"setting_title" | translate}}
         </ion-item>
 <!-- 
 
@@ -57,9 +58,9 @@
         </ion-item>
  -->
       </ion-list>
-      <div class="item-image" style="padding:50px;">
+      <div class="item-image" style="padding:50px; font-size:11px; color:#777777;">
         <img src="img/made.jpg" >
-        VisionTrip 1.0
+        {{"set_language" | translate}} - Combodia Version
       </div>
     </ion-content>
   </ion-side-menu>

@@ -2,9 +2,11 @@
   
       "set_language": "한국어",
       "home_title":"홈",
+      "home_slidetext_1" : "복음을 향한 거룩한 <b>열정</b>",
+      "home_slidetext_2" : "비전트립은 복음을 전하기 위해<br>그들을 만나는 시간입니다.",
       "gospel_title":"복음제시",
       "praise_title":"찬양",
-      "language_title":"선교언어",
+      "language_title":"회화",
       "language_lang1":[
             {"myLang": "안녕하세요.", "lang_sound":"쭘 리어 쑤어. 쑤어쓰 데이", "id" : 1},
             {"myLang": "만나서 반갑습니다.", "lang_sound":"릭 리나 데일 반쭙 니악.", "id" : 2},
@@ -48,7 +50,7 @@
             
       "contry_title":"국가정보",
       "manual_title":"비전트립매뉴얼",
-      "setting_title": "설정",
+      "setting_title": "언어설정",
       "setting_title_s1" : "일반설정",
       "setting_lang" : "언어설정"
             
