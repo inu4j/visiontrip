@@ -1,10 +1,10 @@
 
-
 <ion-view view-title="{{ 'gospel_title' | translate}}" ng-controller="GospelCtrl">
+       <ion-nav-buttons side="right" ng-hide="true" >
+      </ion-nav-buttons>
 
     <ion-content>
     <div class="list card">
-
     <ion-slide-box on-slide-changed="slideChanged(index)" active-slide="slideIndex" class="padding">
         
       <ion-slide ng-repeat="GospelCtrl in gospel" id="margin_zero">
@@ -18,15 +18,16 @@
 
     <div class="item tabs tabs-secondary tabs-icon-left">
         <a class="tab-item" href="#" ng-click="slide_prev(slideIndex)">
-        <i class="icon ion-ios-arrow-back"></i>이전
+        <i class="icon ion-ios-arrow-back"></i>{{ "btn_prev" | translate}}
         </a>
 
-        <a class="tab-item" href="#" ng-click="play(slideIndex)">
-        <i class="icon ion-ios-reload"></i>
+        <a class="tab-item" href="#" ng-click="soundSwitch()">
+          <i class="icon ion-volume-medium" ng-show="soundflag"></i>
+          <i class="icon ion-volume-mute" ng-hide="soundflag"></i>
         </a>
 
         <a class="tab-item" href="#" ng-click="slide_next(slideIndex)">
-        다음<i class="icon ion-ios-arrow-forward"></i>
+        {{ "btn_next" | translate}}<i class="icon ion-ios-arrow-forward"></i>
         </a>
     </div>
 
@@ -35,7 +36,6 @@
 </ion-view>
 
 
-// 첫 오디오 파일은 실행시 항상 플레이 됨
 <!-- <audio id="myAudio" autoplay="true"> 
  <source src="audio/gospel_1.mp3" type='audio/mp3'>
  Your user agent does not support the HTML5 Audio element.

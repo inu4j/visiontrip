@@ -19,7 +19,7 @@
 
 <ion-view view-title="{{ 'praise_title' | translate}}" ng-load="init()" >
   <ion-content>
-<div class="praise_top">하나님을 찬양합시다.</div>
+<div class="praise_top">{{ "praise_word_onimage"| translate}}</div>
 
 <ion-list>
   <ion-item  ng-repeat="playlist in playlists" class="praise_item" href="#/app/playlists/{{playlist.id}}">

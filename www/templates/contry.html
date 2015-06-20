@@ -1,8 +1,7 @@
 
 
-<ion-view view-title="국가정보" ng-controller="ContryCtrl">
+<ion-view view-title="{{'contry_title' | translate}}" ng-controller="ContryCtrl">
       <ion-slide-box on-slide-changed="slideChanged(index)" >
-
           <ion-slide ng-repeat="ContryCtrl in information">
 		  	<ion-content>
 	            <h3 id="page_title">{{ContryCtrl.title}}</h3>

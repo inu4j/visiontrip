@@ -1,5 +1,55 @@
 /* Empty. Add your own CSS if you like */
 
+@font-face { 
+	font-family: 'Nanum'; 
+	font-weight: normal;	
+	src : url('../font/NanumBarunGothicUltraLight.otf') format("opentype");
+}
+
+
+@font-face { 
+	font-family: 'Nanum'; 
+	font-weight: bold;
+	src : url('../font/NanumBarunGothic.otf') format("opentype");
+}
+/*
+@font-face { 
+	font-family: 'Noto'; 
+	font-weight: 100;
+	src : url('../font/NotoSansCJKkr-Thin.otf') format("opentype");
+}
+@font-face { 
+	font-family: 'Noto'; 
+	font-weight: 200;
+	src : url('../font/NotoSansCJKkr-Light.otf') format("opentype");;
+}
+
+@font-face { 
+	font-family: 'Noto'; 
+	font-weight: normal;
+	src : url('../font/NotoSansCJKkr-DemiLight.otf') format("opentype");;
+}
+@font-face { 
+	font-family: 'Noto'; 
+	font-weight: bold;
+	src : url('../font/NotoSansCJKkr-Bold.otf') format("opentype");;
+}
+*/
+
+body, .ionic-body {
+font-family: "Nanum";
+}
+
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+font-family: "Nanum";
+}
+
+input, button, select, textarea {
+	font-family: "Nanum";
+}
+
+
+
 a:link {
 	text-decoration: none;
 }
@@ -11,6 +61,135 @@ a:hover {
 }
 a:active {
 	text-decoration: none;
+}
+
+/* top bar */
+.bar.bar-clear{
+  background-color:rgba(0, 0 , 0 ,0.4) !important;
+
+}
+
+
+.has-km-image {
+  background-color: none !important;
+  background: url('../img/menu_back_km.png') repeat left top !important;
+  background-size: 100% 100%;
+
+}
+
+/* Menu Title Bar */
+.title_top{
+	padding-top: 0px;
+  	top:-7px !important;;
+}
+
+/* ion item -  Customizing */
+.item-content{
+  padding-top:8px !important;
+  padding-bottom:8px !important;
+}
+
+
+.div_item{
+	margin-top: 5px;
+	margin-bottom: 5px;
+	font-size: 17px;
+	font-weight: 200;
+}
+
+.icon_menu{
+	width: 28px;
+	margin-right: 13px;
+	vertical-align: middle;
+}
+
+/* home 용 이미지 & Text */
+
+ #back{
+	 background-color: white;
+	 height: 100%;
+ }
+ 
+ 
+#container {
+	display: table;
+	width: 100%;
+	 #position: relative; 
+	 overflow: hidden;
+}
+
+#margin_zero {
+	margin-top : 0px;
+	margin-bottom: 0px;
+	padding-top: 0px;
+	padding-bottom: 0px;
+}
+#home_slide_img{
+	height:220px;
+	width:100%;
+	background: center center;
+	background-size: 100% 220px;
+
+}
+
+#home_slide_title{
+	padding-top: 130px;
+	padding-left:30px;
+	padding-bottom:10px;
+	text-align: left;
+	color : white;
+	font-size: 34px;
+	text-shadow: 2px 2px 2px black;
+	font-family: "Helvetica";
+}
+
+#home_slide_text{
+	padding-left:30px;
+	text-align: left;
+	color : white;
+	font-size: 17px;
+	font-weight: normal;
+}
+
+.icon_stitle{
+	margin-top:5px;
+	margin-bottom: 0px;
+	font-size: 9px;
+	font-weight: 100;
+	color:#888888;
+}
+.icon_home{
+	margin: 0px;
+	width:60px;
+
+}
+
+.row_margin{
+	margin: 0px;
+	padding: 0px !important;
+}
+
+#custom_col {
+	width: 50%;
+	min-height: 140px;
+	border: #eeeeee; 
+	border-style: solid; 
+	border-width: 1px; 
+
+	padding : 20px 0px 0px 0px !important;
+	margin: 0px 0px 4px 0px !important;
+	font-size:18px;
+	font-weight: normal;
+	line-height: 17px;
+	color:#000000;
+	text-align:center !important;
+ }
+
+.my-icon:before,
+.my-icon{
+  font-size:50px !important;
+  display:block !important;
+  margin-bottom: 10px;
 }
 
 /* slide 관련 css */
@@ -63,30 +242,3 @@ a:active {
 }
 
 /* slide 관련 css */
-
-/* home 용 이미지 */
-
-
- #back{
-	 background-color: white;
-	 height: 100%;
- }
- 
- #title1{
-	 text-align: center;
- }
- 
-#container {
-	display: table;
-	width: 100%;
-	 #position: relative; 
-	 overflow: hidden;
-}
-
-#margin_zero {
-	margin-top : 0px;
-	margin-bottom: 0px;
-	padding-top: 0px;
-	padding-bottom: 0px;
-}
-

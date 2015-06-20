@@ -1,32 +1,32 @@
-<ion-view view-title="선교언어">
+<ion-view view-title=" {{'language_title' | translate}}">
   <ion-content ng-controller="lang_list">
 <div class="list">
   <ion-list>
     <div class="item item-divider"> 
-        일반회화
+        {{"language_general" | translate}}
     </div> 
-    <ion-item class="item item-avatar" ng-repeat="lang in langs1" href="#" ng-click="play({{lang.id}})">  
+    <ion-item class="item item-avatar" href="#" ng-repeat="lang in langs1"  ng-click="play({{lang.id}})">  
         <img src="img/play-icon2.png">
         <h2>{{lang.myLang}}</h2>
-        <p>{{lang.lang_sound}}</p>
+        <p>{{langs1_sound[$index].lang_sound }}</p> 
     </ion-item>
 
     <div class="item item-divider"> 
-        축복회화
+         {{"language_bless" | translate}}
     </div> 
     <ion-item class="item item-avatar" ng-repeat="lang in langs2" href="#" ng-click="play({{lang.id}})">  
         <img src="img/play-icon2.png">
         <h2>{{lang.myLang}}</h2>
-        <p>{{lang.lang_sound}}</p>
+        <p>{{langs2_sound[$index].lang_sound }}</p>
     </ion-item>
 
     <div class="item item-divider"> 
-        전도회화
+         {{"language_evangel" | translate}}
     </div> 
     <ion-item class="item item-avatar" ng-repeat="lang in langs3" href="#" ng-click="play({{lang.id}})">  
         <img src="img/play-icon2.png">
         <h2>{{lang.myLang}}</h2>
-        <p>{{lang.lang_sound}}</p>
+        <p>{{langs3_sound[$index].lang_sound }}</p>
     </ion-item>
 
  

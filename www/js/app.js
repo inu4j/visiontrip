@@ -5,10 +5,9 @@
 // the 2nd parameter is an array of 'requires'
 // 'starter.controllers' is found in controllers.js
 
-angular.module('starter', ['ionic', 'starter.controllers', 'ngCordova', 'ngCookies','pascalprecht.translate'])
+var self_module = angular.module('starter', ['ionic', 'starter.controllers', 'ngCordova', 'ngCookies','pascalprecht.translate'])
 
 .run(function($ionicPlatform, $translate, $translateLocalStorage ) {
-
   $ionicPlatform.ready(function() {
     // Hide the accessory bar by default (remove this to show the accessory bar above the keyboard
     // for form inputs)
@@ -17,11 +16,16 @@ angular.module('starter', ['ionic', 'starter.controllers', 'ngCordova', 'ngCooki
     }
     if (window.StatusBar) {
       // org.apache.cordova.statusbar required
-      StatusBar.styleDefault();
+      // StatusBar.styleDefault();
+      StatusBar.overlaysWebView(true);
+      StatusBar.styleLightContent();
+      StatusBar.show();
     }
-
+  
+// IOS 상단바 / Device text 를 white 로
+  // styles: Default : 0, LightContent: 1, BlackTranslucent: 2, BlackOpaque: 3
+    
   })
-
 })
 
 
@@ -52,7 +56,7 @@ angular.module('starter', ['ionic', 'starter.controllers', 'ngCordova', 'ngCooki
   $translate.use('en-US');
         
         }
-       } 
+       }
      });
 }])
 

@@ -1,0 +1,49 @@
+{
+	"target_language" : 
+		{"ko-KR" : "캄보디아", "en-US" : "Cambodia"},
+	"target_id" : "km",
+    "language1_sound":[
+            {"lang_sound":"쭘 리어 쑤어. 쑤어쓰 데이", "id" : 1},
+            {"lang_sound":"릭 리나 데일 반쭙 니악.", "id" : 2},
+            {"lang_sound":"따으 니악 쯔무어 아웨이?", "id" : 3},
+            {"lang_sound":"크뇸 쯔무어 OO.", "id" : 4},
+            {"lang_sound":"쏙 쌉빠이 찌아 데이?", "id" : 5},
+            {"lang_sound":"빳 쏙 쌉빠이 찌아 데이.", "id" : 6},
+            {"lang_sound":"쏨 또으.", "id" : 7},
+            {"lang_sound":"먼 에이 떼.", "id" : 8},
+            {"lang_sound":"어꼰.", "id" : 9},
+            {"lang_sound":"남(빳) / (여)짜", "id" : 10},
+            {"lang_sound":"따으 번똡뜨윽 너으 에나?", "id" : 11},
+            {"lang_sound":"따으 니스 찌아웨이?", "id" : 12},
+            {"lang_sound":"따으 니악 로우스 너으 에나?", "id" : 13},
+            {"lang_sound":"따으 아니스 틀라이 번만?", "id" : 14},
+            {"lang_sound":"야앙 메잊 데이?/ 라어 나스.", "id" : 15},
+            {"lang_sound":"크뇸 머억 삐 쁘러떼이 꼬래.", "id" : 16},
+            {"lang_sound":"쏨 뜨윽 냠 번띠잊.", "id" : 17},
+            {"lang_sound":"쭈업 끄니아 뻬일 끄로어이.", "id" : 18},
+            {"lang_sound":"따으 니악 아육 번만?", "id" : 19},
+            {"lang_sound":"크뇸 아육 00쯔남.", "id" : 20}
+            ],
+      "language2_sound":[
+            {"lang_sound":"쏨 쯔어 프리아 예수.", "id": 21},
+            {"lang_sound":"쏨 아틱탄 아우이 크뇸 펑.", "id": 22},
+            {"lang_sound":"크뇸 능 아틱탄 아우이 니악.", "id": 23},
+            {"lang_sound":"크뇸 스럴라잉 프리아 예수.", "id": 24},
+            {"lang_sound":"프리아 예수 스럴라잉 니악.", "id": 25},
+            {"lang_sound":"프리아 벙 까읏 펜데이 머억 다음 바이 뿌억 요응.", "id": 26},
+            {"lang_sound":"쯔아 프라아 예수 능 또뚜얼 빤 피압 릭리아으 끄러업 뻬일, ", "id": 27},
+            {"lang_sound":"뿌억 크뇸 머억 띠니스 따음바이 쩨익짜이 끄데이 스럴라잉 로버스 프리아 더얼 니악.", "id": 28},
+            {"lang_sound":"쏨 프리아 프러띠안 뽀더얼 니악.", "id": 29}
+            ],
+      "language3_sound":[
+            {"lang_sound":"너으 크농 프리아 예수 미언 찌 워엇.", "id": 30},
+            {"lang_sound":"더우이싸 엄빠으 빠압 모누스 끄 끼잊 먼폿 삐 세잊 끄데이 슬랍.", "id": 31},
+            {"lang_sound":"쯔아 프리아 예수 능 루엊 폿삐 엄 빠으 빠압. ", "id": 32},
+            {"lang_sound":"쯔아 프리아 예수 능 바안 또우 탄쑤어. ", "id": 33},
+            {"lang_sound":"프리아 예수크리스 능 프찌아 바알 네악.", "id": 34}
+            ]
+
+}
+
+
+
