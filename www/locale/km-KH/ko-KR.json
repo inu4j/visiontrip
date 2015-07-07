@@ -1,0 +1,165 @@
+{
+      "set_language": "한국어",
+      "app_name" : "비전트립",
+      "version" : "버전",
+      "home_title":"홈",
+      "home_slide1_title" : "<b>Vision</b>Trip",
+      "home_slide1_text" : "보게 하시는 그 땅을 품으라.",
+      "home_slide2_title" : "선교완성",
+      "home_slide2_text" : "완성될 하나님의 역사에 동참합시다.",
+      "home_slide3_title" : "기도해 주세요",
+      "home_slide3_text" : "많은 민족을 섬기도록 기도해주세요.",
+      "gospel_title":"복음제시",
+      "btn_prev" : "이전",
+      "btn_next" : "다음",
+      "praise_title":"찬양",
+      "praise_word_onimage" : "주님을 찬양합시다.",
+
+      "language_title":"회화",
+      "MissionDig_title":"선교회화",
+      "MissionDig":[
+            {"category":"선교회화","cat_ID":"","data":[
+                  {"myLang": "예수님 믿으세요.",  "ID": "lang_21"},
+                  {"myLang": "기도해주세요.", "ID": "lang_22"},
+                  {"myLang": "기도해줄게요.",  "ID": "lang_23"},
+                  {"myLang": "나는 예수님을 사랑해요.", "ID": "lang_24"},
+                  {"myLang": "예수님이 당신을 사랑합니다.", "ID": "lang_25"},
+                  {"myLang": "하나님이 우리를 위해 세상을 만드셨습니다.", "ID": "lang_26"},
+                  {"myLang": "예수님을 믿으면 항상 행복해요.",  "ID": "lang_27"},
+                  {"myLang": "우리는 당신에게 하나님의 사랑을 나누기 위해 이곳에 왔습니다.", "ID": "lang_28"},
+                  {"myLang": "당신을 축복합니다.", "ID": "lang_29"},
+                  {"myLang": "예수님 안에서 생명이 있습니다.", "ID": "lang_30"},
+                  {"myLang": "사람은 죄로 인해 죽을 수밖에 없습니다.", "ID": "lang_31"},
+                  {"myLang": "예수님 믿으면 죄의 문제가 해결됩니다.", "ID": "lang_32"},
+                  {"myLang": "예수님 믿으면 천국에 갈 수 있습니다.","ID": "lang_33"},
+                  {"myLang": "예수님께서 고쳐주실 거예요.",  "ID": "lang_34"}
+                  ]
+            }
+      ],
+
+      "MissionWord_title":"선교단어",
+      "MissionWord":[
+            {"category":"선교단어","cat_ID":"","data":
+                  [{"myLang":"하나님","ID":""},
+                  {"myLang":"예수님","ID":""},
+                  {"myLang":"목사님","ID":""},
+                  {"myLang":"찬양","ID":""}]
+            },
+            {"category":"동사","cat_ID":"","data":
+                  [{"myLang":"사랑합니다","ID":""},
+                  {"myLang":"축복해요","ID":""},
+                  {"myLang":"싫어한다","ID":""},
+                  {"myLang":"놀라다","ID":""},
+                  {"myLang":"만족하다","ID":""},
+                  {"myLang":"자랑하다","ID":""},
+                  {"myLang":"부끄러워요","ID":""},
+                  {"myLang":"슬프다","ID":""},
+                  {"myLang":"믿는다","ID":""},
+                  {"myLang":"덥다","ID":""},
+                  {"myLang":"춥다","ID":""},
+                  {"myLang":"아프다","ID":""},
+                  {"myLang":"비싸요","ID":""},
+                  {"myLang":"비싸지않아요","ID":""},
+                  {"myLang":"깍아주세요","ID":""},
+                  {"myLang":"배고파요","ID":""}]
+            }
+      ],
+
+      "Dialog_title":"회화",
+      "Dialog":[
+            {"category":"기본회화","cat_ID":"","data":[
+                  {"myLang": "안녕하세요.","ID" : "lang_1"},
+                  {"myLang": "만나서 반갑습니다.",  "ID" : "lang_2"},
+                  {"myLang": "이름이 뭐예요?",  "ID" : "lang_3"},
+                  {"myLang": "제 이름은 OO입니다.", "ID" : "lang_4"},
+                  {"myLang": "잘 지내십니까?",  "ID" : "lang_5"},
+                  {"myLang": "네, 잘 지내십니다.", "ID" : "lang_6"},
+                  {"myLang": "미안합니다.", "ID" : "lang_7"},
+                  {"myLang": "괜찮습니다.",  "ID" : "lang_8"},
+                  {"myLang": "감사합니다.",  "ID" : "lang_9"},
+                  {"myLang": "예/ 아니요.",  "ID" : "lang_10"},
+                  {"myLang": "화장실이 어디입니까?", "ID" : "lang_11"},
+                  {"myLang": "이것이 뭐예요?",  "ID" : "lang_12"},
+                  {"myLang": "어디에 살아요?",  "ID" : "lang_13"},
+                  {"myLang": "이게 얼마예요?","ID" : "lang_14"},
+                  {"myLang": "어때요?? 좋아요.",  "ID" : "lang_15"},
+                  {"myLang": "나는 한국에서 왔습니다.", "ID" : "lang_16"},
+                  {"myLang": "물 좀 주세요.","ID" : "lang_17"},
+                  {"myLang": "다음에도 만나요.", "ID" : "lang_18"},
+                  {"myLang": "몇 살이에요?", "ID" : "lang_19"},
+                  {"myLang": "나는00입니다.", "ID" : "lang_20"}]
+            }
+           
+      ],
+
+      "Word_title":"단어",
+      "Word":[
+            {"category":"숫자","cat_ID":"","data":
+                 [{"myLang":"숫자(0)","ID":""},
+                  {"myLang":"숫자(1)","ID":""},
+                  {"myLang":"숫자(2)","ID":""},
+                  {"myLang":"숫자(3)","ID":""},
+                  {"myLang":"숫자(4)","ID":""},
+                  {"myLang":"숫자(5)","ID":""},
+                  {"myLang":"숫자(6)","ID":""},
+                  {"myLang":"숫자(7)","ID":""},
+                  {"myLang":"숫자(8)","ID":""},
+                  {"myLang":"숫자(9)","ID":""},
+                  {"myLang":"숫자(10)","ID":""},
+                  {"myLang":"큰숫자(100,1000,10000)","ID":""}]
+            },
+            {"category":"색깔","cat_ID":"","data":
+                  [{"myLang":"빨간색","ID":""},
+                  {"myLang":"하얀색","ID":""},
+                  {"myLang":"초록색","ID":""},
+                  {"myLang":"노란색","ID":""},
+                  {"myLang":"검은색","ID":""},
+                  {"myLang":"파란색","ID":""},
+                  {"myLang":"핑크색","ID":""},
+                  {"myLang":"색깔","ID":""}]                
+            },
+            {"category":"신체부위","cat_ID":"","data":
+                  [{"myLang":"머리","ID":""},
+                  {"myLang":"얼굴","ID":""},
+                  {"myLang":"목","ID":""},
+                  {"myLang":"어깨","ID":""},
+                  {"myLang":"등","ID":""},
+                  {"myLang":"가슴","ID":""},
+                  {"myLang":"발","ID":""},
+                  {"myLang":"팔 , 손","ID":""},
+                  {"myLang":"배","ID":""},
+                  {"myLang":"허리","ID":""},
+                  {"myLang":"엉덩이","ID":""},
+                  {"myLang":"다리","ID":""},
+                  {"myLang":"무릎","ID":""}]             
+             },
+        {"category":"시제","cat_ID":"","data":
+                  [{"myLang":"~해주세요 (예:기도해주세요)","ID":""},
+                  {"myLang":"의무/~해야한다 (예:기도해야합니다)","ID":""},
+                  {"myLang":"~하고싶다 (예:나는 기도하고 싶어요)","ID":""},
+                  {"myLang":"하고있다 (예:기도하고 있어요)","ID":""},
+                  {"myLang":"은/는,이/가 (예:나는예수님을사랑해요)","ID":""},
+                  {"myLang":"을/를","ID":""},
+                  {"myLang":"~의 (예:나의집은 한국입니다)","ID":""},
+                  {"myLang":"~만(only) (예:쉬운 말만 할 수 있어요)","ID":""},
+                  {"myLang":"~에서(from) (예:나는 한국에서 왔어요)","ID":""},
+                  {"myLang":"~에(at/in/on) (예:나는한국에살아요)","ID":""}]
+            }
+      ],
+  
+      "contry_title":"국가정보",
+      "manual_title":"비전트립매뉴얼",
+      "setting_title": "언어설정",
+      "setting_title_s1" : "언어설정",
+      "setting_target_title" : "비전트립 대상언어",
+      "setting_target" : [
+            {"name":"멕시코(스페니쉬)","ID":"es-MX"},
+            {"name":"캄보디아(크메르)","ID":"km-KH"} 
+            ],
+      "setting_mylang_title" : "사용자언어",
+      "setting_mylang" : [
+            {"name":"한국어","ID":"ko-KR"},
+            {"name":"영어(미국)","ID":"en-US"} 
+            ]
+
+}

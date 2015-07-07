@@ -1,0 +1,169 @@
+{
+      "set_language": "English",
+      "app_name" : "VisionTrip",
+      "version" : "version",
+      "home_title":"Home",
+      "home_slide1_title" : "<b>Vision</b>Trip",
+      "home_slide1_text" : "Let showed land to me mind be in you",
+      "home_slide2_title" : "Mission Complete",
+      "home_slide2_text" : "Join the history of the Lord to be completed.",
+      "home_slide3_title" : "Pray for us.",
+      "home_slide3_text" : "Pray for us to serve all nations",
+      "gospel_title":"Speaking Gospel",
+      "btn_prev" : "Prev",
+      "btn_next" : "Next",
+      "praise_title":"Praise",
+      "praise_word_onimage" : "Praise the Lord ",
+
+      "language_title":"Conversation",
+
+      "MissionDig_title":"Mission Dialog",
+      "MissionDig":[
+                  {"category":"Mission Conversation","cat_ID":"","data":[
+                  {"myLang": "Believe in Jesus.", "ID": "lang_21"},
+                  {"myLang": "Pray for me.", "ID": "lang_22"},
+                  {"myLang": "Pray for you.", "ID": "lang_23"},
+                  {"myLang": "I love Jesus.",  "ID": "lang_24"},
+                  {"myLang": "Jesus loves you.",  "ID": "lang_25"},
+                  {"myLang": "God has create the world for us.",  "ID": "lang_26"},
+                  {"myLang": "We are always happy, because believe in Jesus.",  "ID": "lang_27"},
+                  {"myLang": "We came here to share the love of God to you.",  "ID": "lang_28"},
+                  {"myLang": "God Bless you.",  "ID": "lang_29"},           
+                  {"myLang": "The life is in Jesus.", "ID": "lang_30"},
+                  {"myLang": "People have to dead. because their sins.", "ID": "lang_31"},
+                  {"myLang": "If you believe in Jesus, you fix the problem of sin.","ID": "lang_32"},
+                  {"myLang": "If you believe in Jesus, you can go to heaven.",  "ID": "lang_33"},
+                  {"myLang": "Now, you're gon na fix would Jesus.",  "ID": "lang_34"}
+                  ]
+            }
+      ],
+
+      "MissionWord_title":"선교단어",
+      "MissionWord":[
+            {"category":"Mission Word","cat_ID":"","data":
+                  [{"myLang":"God","ID":""},
+                  {"myLang":"Jesus","ID":""},
+                  {"myLang":"Pastor","ID":""},
+                  {"myLang":"Praise","ID":""}]
+            },
+            {"category":"동사","cat_ID":"","data":
+                  [{"myLang":"love","ID":""},
+                  {"myLang":"bless","ID":""},
+                  {"myLang":"hate","ID":""},
+                  {"myLang":"surprise","ID":""},
+                  {"myLang":"satisfy","ID":""},
+                  {"myLang":"boast","ID":""},
+                  {"myLang":"shame","ID":""},
+                  {"myLang":"sad","ID":""},
+                  {"myLang":"believe","ID":""},
+                  {"myLang":"hot","ID":""},
+                  {"myLang":"cold","ID":""},
+                  {"myLang":"sick","ID":""},
+                  {"myLang":"expansive","ID":""},
+                  {"myLang":"cheap","ID":""},
+                  {"myLang":"sale please","ID":""},
+                  {"myLang":"hungry","ID":""}]
+            }
+      ],
+
+
+      "Dialog_title":"Conversation",
+      "Dialog":[
+            {"category":"Basic Conversation","cat_ID":"","data":[
+                  {"myLang": "Hello.", "ID" : "lang_1"},
+                  {"myLang": "Nice to meet you", "ID" : "lang_2"},
+                  {"myLang": "What's your name?", "ID" : "lang_3"},
+                  {"myLang": "My name is OOO.",  "ID" : "lang_4"},
+                  {"myLang": "How are you?", "ID" : "lang_5"},
+                  {"myLang": "Yes, I'm fine.", "ID" : "lang_6"},
+                  {"myLang": "I'm sorry.",  "ID" : "lang_7"},
+                  {"myLang": "That's all right.",  "ID" : "lang_8"},
+                  {"myLang": "Thank you.",  "ID" : "lang_9"},
+                  {"myLang": "Yes / No.",  "ID" : "lang_10"},
+                  {"myLang": "Where is the bathroom?",  "ID" : "lang_11"},
+                  {"myLang": "What is this?", "ID" : "lang_12"},
+                  {"myLang": "Where you live?", "ID" : "lang_13"},
+                  {"myLang": "How much is it?",  "ID" : "lang_14"},
+                  {"myLang": "What do you think? / Good.",  "ID" : "lang_15"},
+                  {"myLang": "I'm from South Korea.",  "ID" : "lang_16"},
+                  {"myLang": "Please give me some water.", "ID" : "lang_17"},
+                  {"myLang": "See you then also.",  "ID" : "lang_18"},
+                  {"myLang": "How old are you?",  "ID" : "lang_19"},
+                  {"myLang": "I'm OO years old.", "ID" : "lang_20"}]
+            }      
+      ],         
+
+      "Word_title":"Word",
+      "Word":[
+            {"category":"Number","cat_ID":"","data":
+                 [{"myLang":"Number(0)","ID":""},
+                  {"myLang":"Number(1)","ID":""},
+                  {"myLang":"Number(2)","ID":""},
+                  {"myLang":"Number(3)","ID":""},
+                  {"myLang":"Number(4)","ID":""},
+                  {"myLang":"Number(5)","ID":""},
+                  {"myLang":"Number(6)","ID":""},
+                  {"myLang":"Number(7)","ID":""},
+                  {"myLang":"Number(8)","ID":""},
+                  {"myLang":"Number(9)","ID":""},
+                  {"myLang":"Number(10)","ID":""},
+                  {"myLang":"Number(100,1000,10000)","ID":""}]
+            },
+            {"category":"Color","cat_ID":"","data":
+                  [{"myLang":"Red","ID":""},
+                  {"myLang":"White","ID":""},
+                  {"myLang":"Green","ID":""},
+                  {"myLang":"Yellow","ID":""},
+                  {"myLang":"Black","ID":""},
+                  {"myLang":"Blue","ID":""},
+                  {"myLang":"Pink","ID":""},
+                  {"myLang":"Color","ID":""}]                
+            },
+            {"category":"Body","cat_ID":"","data":
+                  [{"myLang":"Head","ID":""},
+                  {"myLang":"Face","ID":""},
+                  {"myLang":"Neck","ID":""},
+                  {"myLang":"Sholder","ID":""},
+                  {"myLang":"Back","ID":""},
+                  {"myLang":"Chest","ID":""},
+                  {"myLang":"Foot","ID":""},
+                  {"myLang":"Arm , Hand","ID":""},
+                  {"myLang":"Stomach","ID":""},
+                  {"myLang":"Waist","ID":""},
+                  {"myLang":"Hip","ID":""},
+                  {"myLang":"Leg","ID":""},
+                  {"myLang":"Nee","ID":""}]           
+            },
+            {"category":"시제","cat_ID":"","data":
+                  [{"myLang":"~해주세요 (예:기도해주세요)","ID":""},
+                  {"myLang":"의무/~해야한다 (예:기도해야합니다)","ID":""},
+                  {"myLang":"~하고싶다 (예:나는 기도하고 싶어요)","ID":""},
+                  {"myLang":"하고있다 (예:기도하고 있어요)","ID":""},
+                  {"myLang":"은/는,이/가 (예:나는예수님을사랑해요)","ID":""},
+                  {"myLang":"을/를","ID":""},
+                  {"myLang":"~의 (예:나의집은 한국입니다)","ID":""},
+                  {"myLang":"~만(only) (예:쉬운 말만 할 수 있어요)","ID":""},
+                  {"myLang":"~에서(from) (예:나는 한국에서 왔어요)","ID":""},
+                  {"myLang":"~에(at/in/on) (예:나는한국에살아요)","ID":""}]
+            }
+      ],
+
+
+  
+      "contry_title":"Country",
+      "manual_title":"VisionTrip Manual",
+      "setting_title": "Setting",
+      "setting_title_s1" : "Language Setting",
+      "setting_target_title" : "Target Language",
+      "setting_target" : [
+            {"name":"Mexican Spanish","ID":"es-MX"},
+            {"name":"Cambodia Khmer","ID":"km-KH"} 
+            ],
+      "setting_mylang_title" : "User Language",
+      "setting_mylang" : [
+            {"name":"Korean","ID":"ko-KR"},
+            {"name":"English(US)","ID":"en-US"} 
+            ]
+
+  }
+

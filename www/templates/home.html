@@ -1,81 +1,67 @@
-<style type="text/css">
-#home_slide_img{
-	height:290px;
-	width:100%;
-	background: center center;
-	background-size: 100% 290px;
-
-}
-#home_slide_text{
-	margin-top: 170px;
-	color : white;
-	font-size: 18px;
-	text-shadow: 2px 2px 2px black;
-}
-
-.row_margin{
-	margin: 0px;
-	padding: 0px;
-}
-
-#custom_col {
-	width: 33%;
-	border: #dddddd; 
-	border-style: solid; 
-	border-width: 1px; 
-	padding-top: 20px; 
-	margin: 1px 1px 5px 1px !important;
-	min-height: 120px;
-	font-size:15px;
-	font-weight: 800;
-	line-height: 17px;
-	color:#888888;
-	text-align:center !important;
- }
-
-.my-icon:before,
-.my-icon{
-  font-size:50px !important;
-  display:block !important;
-  margin-bottom: 10px;
-}
-</style>
-
-<ion-view view-title="Cambodia VisionTrip" id="back"> 
-  <ion-content ng-controller="HomeCtrl">
-
+<ion-view view-title="{{target_lang}} {{'app_name' | translate}}" id="back" cache-view="false" > 
+  <ion-content class="no-header" style="top: 0;" ng-controller="HomeCtrl"  >
 
  <ion-slide-box>
         
       <ion-slide  id="margin_zero">
         <div class="item item-image" id="home_slide_img" style="background-image: url('./img/home_img_1.jpg')" >
-	        <br><br>
-			<p id="home_slide_text" ng-bind-html="'home_slidetext_1' | translate"></p>
+			<p id="home_slide_title" ng-bind-html="'home_slide1_title' | translate"></p>
+			<p id="home_slide_text" ng-bind-html="'home_slide1_text' | translate"></p>
 
          </div>
       </ion-slide>    
      
       <ion-slide  id="margin_zero">
         <div class="item item-image" id="home_slide_img" style="background-image: url('./img/home_img_2.jpg')" >
-			<p id="home_slide_text" ng-bind-html="'home_slidetext_2' | translate"></p>
+			<p id="home_slide_title" ng-bind-html="'home_slide2_title' | translate"></p>
+			<p id="home_slide_text" ng-bind-html="'home_slide2_text' | translate"></p>
         </div>
       </ion-slide>    
+
+      <ion-slide  id="margin_zero">
+        <div class="item item-image" id="home_slide_img" style="background-image: url('./img/home_img_3.jpg')" >
+			<p id="home_slide_title" ng-bind-html="'home_slide3_title' | translate"></p>
+			<p id="home_slide_text" ng-bind-html="'home_slide3_text' | translate"></p>
+        </div>
+      </ion-slide>    
+
+
+
   </ion-slide-box>
 
-  <div class="row row_margin" >
-	  <a class="button button-block button-light" id="custom_col"href="#/app/gospel" menu-close ><i class="icon ion-ios-heart my-icon" style="color:#ffbfbf"></i>{{"gospel_title" | translate}}</a>
+  <div class="row zero_margin" >
+	  <a class="button button-block button-light" id="custom_col" style="width:100% !important;" href="#/app/gospel" menu-close >
+    {{"gospel_title" | translate}}
+    <p class="icon_stitle">G O S P E L</p>
+    <img src="img/icon/icon_gospel.png" class="icon_home"/>
+    </a>
 
-  	  <a class="button button-block button-light" id="custom_col" href="#/app/praylists" menu-close ><i class="icon ion-ios-musical-notes my-icon"  style="color:#ffd88d"></i>{{"praise_title" | translate}}</a>
-	  <a class="button button-block button-light" id="custom_col" href="#/app/language" menu-close ><i class="icon ion-ios-chatbubble my-icon"  style="color:#b9e9ff"></i>{{"language_title" | translate}}</a>
+<!-- 
+     <a class="button button-block button-light" id="custom_col" href="#/app/playlists" menu-close >{{"praise_title" | translate}} 
+      <p class="icon_stitle">P R A I S E</p>
+      <img src="img/icon/icon_praise.png" class="icon_home"/></a>
+
+ -->   	 
  </div>	
 
-  <div class="row row_margin" >
-	  <a class="button button-block button-light" id="custom_col"href="#/app/contry" menu-close ><i class="icon ion-clipboard my-icon"  style="color:#bcffa1"></i>{{"contry_title" | translate}}</a>
+  <div class="row zero_margin" >
+	  <a class="button button-block button-light" id="custom_col" href="#/app/language" menu-close >{{"language_title" | translate}}
+	   <p class="icon_stitle">C O N V E R S A T I O N</p>
+    	<img src="img/icon/icon_language.png" class="icon_home"/>
+    </a>
 
-  	  <a class="button button-block button-light" id="custom_col" href="#/app/manual" menu-close ><i class="icon ion-ios-paper my-icon"   style="color:#c7cbff"></i>{{"manual_title" | translate}}</a>
-	  <a class="button button-block button-light" id="custom_col" href="#/app/setting" menu-close ><i class="icon ion-gear-a my-icon"  style="color:#f9c7ff"></i>{{"setting_title" | translate}}</a>
- </div>	
-<p align="center" style="font-size:9px;color:#aaaaaa;margin-top:5px;">Copyright &#64; FMnC &amp; INU4J  |  Version 1.1.1</p>
+	  <a class="button button-block button-light" id="custom_col"href="#/app/contry" menu-close >{{"contry_title" | translate}}
+	   <p class="icon_stitle">C O U N T R Y</p>
+	    <img src="img/icon/icon_contry.png" class="icon_home"/></a>
+  </div>
+  
+  <div class="row zero_margin" >
+  	  <a class="button button-block button-light" id="custom_col" href="#/app/manual" menu-close >{{"manual_title" | translate}} <p class="icon_stitle">M A N U A L</p>
+    <img src="img/icon/icon_manual.png" class="icon_home"/></a>
+	  <a class="button button-block button-light" id="custom_col" href="#/app/setting" menu-close >{{"setting_title" | translate}} <p class="icon_stitle">S E T T I N G</p>
+    <img src="img/icon/icon_setting.png" class="icon_home"/></a>
+  </div>	
+<p align="center" style="font-size:9px;color:#aaaaaa;margin-top:5px;">Copyright &#64; FMnC &amp; INU4J  |  Version {{app_version}}</p>
 
   </ion-content>
 </ion-view>

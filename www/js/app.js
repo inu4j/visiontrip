@@ -4,11 +4,12 @@
 // 'starter' is the name of this angular module example (also set in a <body> attribute in index.html)
 // the 2nd parameter is an array of 'requires'
 // 'starter.controllers' is found in controllers.js
+var appVersion = "1.3.2";
+var android_expansion_dir = "";
 
-angular.module('starter', ['ionic', 'starter.controllers', 'ngCordova', 'ngCookies','pascalprecht.translate'])
+var self_module = angular.module('starter', ['ionic', 'starter.controllers', 'ngCordova', 'ngCookies','pascalprecht.translate'])
 
 .run(function($ionicPlatform, $translate, $translateLocalStorage ) {
-
   $ionicPlatform.ready(function() {
     // Hide the accessory bar by default (remove this to show the accessory bar above the keyboard
     // for form inputs)
@@ -17,11 +18,23 @@ angular.module('starter', ['ionic', 'starter.controllers', 'ngCordova', 'ngCooki
     }
     if (window.StatusBar) {
       // org.apache.cordova.statusbar required
-      StatusBar.styleDefault();
+      // StatusBar.styleDefault();
+      StatusBar.overlaysWebView(true);
+      StatusBar.styleLightContent();
+      StatusBar.show();
     }
 
+    
+    //app version 구하기
+    // if (window.cordova) {
+    //   cordova.getAppVersion(function(version) {
+    //     appVersion = version;
+    //   });
+    // }
+// IOS 상단바 / Device text 를 white 로
+  // styles: Default : 0, LightContent: 1, BlackTranslucent: 2, BlackOpaque: 3
+    
   })
-
 })
 
 
@@ -52,16 +65,30 @@ angular.module('starter', ['ionic', 'starter.controllers', 'ngCordova', 'ngCooki
   $translate.use('en-US');
         
         }
-       } 
+       }
      });
+}])
+
+.config(['$ionicConfigProvider', function($ionicConfigProvider) {
+
+    $ionicConfigProvider.tabs.position('bottom'); // other values: top
+
 }])
 
 .config(function($stateProvider, $urlRouterProvider, $translateProvider) {
 
-  $translateProvider.useStaticFilesLoader({
-    prefix: 'locale/',
-    suffix: '.json'
-  });
+
+    // 초기값이 없을경우  임시.. 스페니쉬를 디폴트로.. (선택 부분을 만들어야 함)
+        if (!window.localStorage.getItem("target_language")){
+           window.localStorage.setItem("target_language", "es-MX")
+        }
+        var target_lang = window.localStorage.getItem("target_language");
+        console.log("초기 Config / target lang = " + target_lang),
+
+      $translateProvider.useStaticFilesLoader({
+        prefix: 'locale/' + target_lang +'/',
+        suffix: '.json'
+      });
 
   // for (lang in trans){
   //    $translateProvider.translations(lang, trans[lang]);    
@@ -70,6 +97,7 @@ angular.module('starter', ['ionic', 'starter.controllers', 'ngCordova', 'ngCooki
   // $translateProvider.preferredLanguage("ko_KR");
     // remember language
   // console.log("Set LocalStorage");
+
   $translateProvider.useLocalStorage();
   $translateProvider.useSanitizeValueStrategy('escaped');
 

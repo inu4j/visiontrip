@@ -1,37 +1,105 @@
-<ion-view view-title="선교언어">
-  <ion-content ng-controller="lang_list">
-<div class="list">
-  <ion-list>
-    <div class="item item-divider"> 
-        일반회화
-    </div> 
-    <ion-item class="item item-avatar" ng-repeat="lang in langs1" href="#" ng-click="play({{lang.id}})">  
-        <img src="img/play-icon2.png">
-        <h2>{{lang.myLang}}</h2>
-        <p>{{lang.lang_sound}}</p>
-    </ion-item>
 
-    <div class="item item-divider"> 
-        축복회화
-    </div> 
-    <ion-item class="item item-avatar" ng-repeat="lang in langs2" href="#" ng-click="play({{lang.id}})">  
-        <img src="img/play-icon2.png">
-        <h2>{{lang.myLang}}</h2>
-        <p>{{lang.lang_sound}}</p>
-    </ion-item>
+<ion-view view-title=" {{'language_title' | translate}}" ng-controller="lang_list" cache-view="false" >
 
-    <div class="item item-divider"> 
-        전도회화
-    </div> 
-    <ion-item class="item item-avatar" ng-repeat="lang in langs3" href="#" ng-click="play({{lang.id}})">  
-        <img src="img/play-icon2.png">
-        <h2>{{lang.myLang}}</h2>
-        <p>{{lang.lang_sound}}</p>
-    </ion-item>
+<ion-tabs class="tabs-icon-top tabs-background-dark tabs-color-stable">
 
- 
-  </ion-list>
-</div>
 
+<!--Mission Dialog -->
+  <ion-tab title="{{'MissionDig_title' | translate}}" icon-off="ion-ios-heart-outline" icon-on="ion-ios-heart">
+      <div class="bar bar-subheader list list-inset zero_margin">
+        <label class="item item-input">
+          <i class="icon ion-search placeholder-icon"></i>
+          <input type="text" placeholder="Search" ng-model="userText" ng-click="gotoTop()">
+        </label>
+      </div>
+    <ion-content class="has-subheader">
+      <ion-list><a id="top"></a>
+      <ion-item  class="zero_margin" ng-repeat="dialog_item in missiondig_data">  <div class="item item-divider">{{dialog_item.category}}</div> 
+          <ion-item class="item item-avatar item-short" href="#" ng-repeat="item in dialog_item.data | filter:userText"  ng-click="playItem(item.ID)">  
+            <img ng-src="{{ isNull(item.ID) }}">
+            <h3>{{item.myLang}}</h3>
+            <p>{{ item_read("MissionDig_read", dialog_item.cat_ID , item.ID) }}</p> 
+
+<!--             <p>{{missiondig_read[$parent.$parent.$index].data[$index].read}}</p> 
+ -->
+          </ion-item>
+        </ion-item>
+      </ion-list>
   </ion-content>
+  </ion-tab>
+
+  <!-- Mission Word -->
+  <ion-tab title="{{'MissionWord_title' | translate}}" icon-off="ion-ios-paper-outline" icon-on="ion-ios-paper">
+      <div class="bar-subheader list list-inset zero_margin">
+        <label class="item item-input">
+          <i class="icon ion-search placeholder-icon"></i>
+          <input type="text" placeholder="Search" ng-model="userText">
+        </label>
+      </div>
+      <ion-content class="has-subheader">
+      <ion-list>
+        <ion-item  class="zero_margin" ng-repeat="word_item in missionword_data"> 
+          <div class="item item-divider">{{word_item.category}}</div> 
+          <ion-item class="item item-avatar item-short" href="#" ng-repeat="item in word_item.data | filter:userText"  ng-click="playItem(item.ID)">  
+            <img ng-src="{{ isNull(item.ID) }}">
+            <h2>{{item.myLang}}</h2>
+            <p>{{ item_read("MissionWord_read", word_item.cat_ID , item.ID) }}</p> 
+          </ion-item>
+        </ion-item>
+      </ion-list>
+  </ion-content>
+  </ion-tab>
+
+
+<!-- Dialog -->
+  <ion-tab title="{{'Dialog_title' | translate}}" icon-off="ion-ios-chatboxes-outline" icon-on="ion-ios-chatboxes">
+      <div class="bar-subheader list list-inset zero_margin">
+        <label class="item item-input">
+          <i class="icon ion-search placeholder-icon"></i>
+          <input type="text" placeholder="Search" ng-model="userText">
+        </label>
+      </div>  
+    <ion-content class="has-subheader">
+      <ion-list>
+        <ion-item  class="zero_margin" ng-repeat="dialog_item in dialog_data"> 
+          <div class="item item-divider">{{dialog_item.category}}</div> 
+          <ion-item class="item item-avatar item-short" href="#" ng-repeat="item in dialog_item.data | filter:userText"  ng-click="playItem(item.ID)">  
+            <img ng-src="{{ isNull(item.ID) }}">
+            <h3>{{item.myLang}}</h3>
+            <p>{{ item_read("Dialog_read", dialog_item.cat_ID , item.ID) }}</p> 
+          </ion-item>
+        </ion-item>
+      </ion-list>
+  </ion-content>
+  </ion-tab>
+
+  <!-- Word -->
+  <ion-tab title="{{'Word_title' | translate}}" icon-off="ion-ios-list-outline" icon-on="ion-ios-list">
+      <div class="bar-subheader list list-inset zero_margin">
+        <label class="item item-input">
+          <i class="icon ion-search placeholder-icon"></i>
+          <input type="text" placeholder="Search" ng-model="userText">
+        </label>
+      </div>
+    <ion-content class="has-subheader">
+      <ion-list>
+        <ion-item  class="zero_margin" ng-repeat="word_item in word_data"> 
+          <div class="item item-divider">{{word_item.category}}</div> 
+          <ion-item class="item item-avatar item-short" href="#" ng-repeat="item in word_item.data | filter:userText"  ng-click="playItem(item.ID)">  
+            <img ng-src="{{ isNull(item.ID) }}">
+            <h2>{{item.myLang}}</h2>
+            <p>{{ item_read("Word_read", word_item.cat_ID , item.ID) }}</p> 
+          </ion-item>
+        </ion-item>
+      </ion-list>
+  </ion-content>
+  </ion-tab>
+
+
+
+
+
+</ion-tabs>
+
+
 </ion-view>

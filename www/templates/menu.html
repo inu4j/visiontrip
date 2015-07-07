@@ -1,6 +1,7 @@
-<ion-side-menus enable-menu-with-back-views="false">
+<ion-side-menus enable-menu-with-back-views="false"  cache-view="false" >
   <ion-side-menu-content> 
-    <ion-nav-bar class="bar-dark nav-title-slide-ios7">
+ 
+    <ion-nav-bar class="bar-clear nav-title-slide-ios7" >
       <ion-nav-back-button >
       </ion-nav-back-button>
 
@@ -12,47 +13,69 @@
     </ion-nav-bar>
 
     <ion-nav-view name="menuContent"></ion-nav-view>
+
   </ion-side-menu-content>
 
-  <ion-side-menu side="left">
-    <ion-header-bar class="bar-calm">
-      <h5 class="title"><b>VisionTrip</b> for Cambodia</h5>
+  <ion-side-menu side="left"> 
+    <ion-header-bar class="bar-calm bar-background" ng-style="{'background-image':'url(locale/'+barBackUrl+'/menu_back.png)'}">
+
+      <h5 class="title title_top"><b>VisionTrip</b> for {{target_title}}</h5>
       <!-- <h7 class="title">{{title}}</h7> -->
     </ion-header-bar>
     <ion-content>
       <ion-list>
 
         <ion-item menu-close href="#/app/home">
-         <i class="ion-earth"></i> &nbsp; {{"home_title" | translate}}          
+         <div  class="div_item">
+          <img src="img/icon/icon_home.png" class="icon_menu"/>{{"home_title" | translate}}
+          </div>          
         </ion-item>
-        <ion-item nav-clear menu-close href="#/app/gospel">
-          <i class="ion-ios-heart"></i> &nbsp; {{"gospel_title" | translate}}
-        </ion-item>
-        <ion-item nav-clear menu-close href="#/app/playlists">
-          <i class="ion-ios-musical-notes"></i> &nbsp; {{"praise_title" | translate}}
-        </ion-item>
+
+        <ion-item class="memu_item" nav-clear menu-close href="#/app/gospel" >
+          <div  class="div_item">
+          <img src="img/icon/icon_gospel.png" class="icon_menu"/>{{"gospel_title" | translate}}
+         </div>
+          </ion-item>
+
+
         <ion-item nav-clear menu-close href="#/app/language">
-         <i class="ion-ios-chatbubble"></i> &nbsp; {{"language_title" | translate}}
+         <div  class="div_item">
+          <img src="img/icon/icon_language.png" class="icon_menu"/>{{"language_title" | translate}}
+          </div>
         </ion-item>
+
+<!--         <ion-item nav-clear menu-close href="#/app/playlists">
+          <div  class="div_item">
+          <img src="img/icon/icon_praise.png" class="icon_menu"/>{{"praise_title" | translate}}
+          </div>
+        </ion-item>
+ -->
         <ion-item nav-clear menu-close href="#/app/contry">
-          <i class="ion-clipboard"></i> &nbsp; {{"contry_title" | translate}}
+          <div  class="div_item">
+          <img src="img/icon/icon_contry.png" class="icon_menu"/>{{"contry_title" | translate}}
+           </div>
         </ion-item>
         <ion-item nav-clear menu-close href="#/app/manual">
-         <i class="ion-ios-paper"></i> &nbsp; {{"manual_title" | translate}}
+         <div  class="div_item">
+          <img src="img/icon/icon_manual.png" class="icon_menu"/>{{"manual_title" | translate}}
+          </div>
         </ion-item>
 
         <ion-item nav-clear menu-close href="#/app/setting">
-         <i class="ion-gear-a"></i> &nbsp; {{"setting_title" | translate}}
-        </ion-item>
+         <div  class="div_item">
+          <img src="img/icon/icon_setting.png" class="icon_menu"/>{{"setting_title" | translate}}
+           </div>
 <!-- 
+
+        </ion-item>
+        <ion-item nav-clear menu-close href="#/app/donation">
+         <img src="img/icon/icon_donation.png" class="icon_menu"/>함께하
+        </ion-item>
 
         <ion-item menu-close href="#/app/browse">
          <i class="ion-earth"></i> &nbsp; test      
         </ion-item>
 
-        <ion-item nav-clear menu-close href="#/app/donation">
-         <i class="ion-happy"></i> &nbsp; 후원하기
-        </ion-item>
         <ion-item nav-clear menu-close href="#/app/share">
          <i class="ion-coffee"></i> &nbsp; 선교나눔
         </ion-item>
@@ -60,7 +83,7 @@
       </ion-list>
       <div class="item-image" style="padding:50px; font-size:11px; color:#777777;">
         <img src="img/made.jpg" >
-        {{"set_language" | translate}} - Combodia Version
+        {{"set_language" | translate}} - {{target_lang}} {{"version" | translate}}
       </div>
     </ion-content>
   </ion-side-menu>
