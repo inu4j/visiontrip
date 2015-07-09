@@ -1,12 +1,21 @@
 
 <ion-view view-title="{{'contry_title' | translate}}" ng-controller="ContryCtrl" cache-view="false">
 
+<<<<<<< HEAD
 <ion-slide-box on-slide-changed="slideChanged(index)"  active-slide="slideIndex" >  
           <ion-slide ng-repeat="item in country_info">
    <ion-content>
    <div class = "list card">
 	            <h3 id="page_title"><b>{{item.title}}</b></h3>
 				<div ><img src='{{item.img}}' align="middle" width="80%" class="imageblock"></div>
+=======
+<ion-view view-title="{{'contry_title' | translate}}" ng-controller="ContryCtrl">
+      <ion-slide-box on-slide-changed="slideChanged(index)" >
+          <ion-slide ng-repeat="ContryCtrl in information">
+		  	<ion-content>
+	            <h3 id="page_title">{{ContryCtrl.title}}</h3>
+				<div><img src='{{ContryCtrl.img}}' align="middle" width="80%"></div>
+>>>>>>> origin/master
 				<div id="list">
 		            <p id="page_content" ng-bind-html="item.content">
 					</p>

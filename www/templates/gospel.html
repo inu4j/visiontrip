@@ -1,11 +1,19 @@
 
+<<<<<<< HEAD
 <ion-view view-title="{{ 'gospel_title' | translate}}" ng-controller="GospelCtrl" cache-view="false">
+=======
+<ion-view view-title="{{ 'gospel_title' | translate}}" ng-controller="GospelCtrl">
+>>>>>>> origin/master
        <ion-nav-buttons side="right" ng-hide="true" >
       </ion-nav-buttons>
 
     <ion-content>
     <div class="list card">
+<<<<<<< HEAD
     <ion-slide-box on-slide-changed="slideChanged(index)" active-slide="slideIndex" >
+=======
+    <ion-slide-box on-slide-changed="slideChanged(index)" active-slide="slideIndex" class="padding">
+>>>>>>> origin/master
         
       <ion-slide ng-repeat="gospel_item in gospel" id="margin_zero">
         <div class="item item-image" >
@@ -33,11 +41,14 @@
     <div class="item tabs tabs-secondary tabs-icon-left">
         <a class="tab-item" href="#" ng-click="slide_prev(slideIndex)">
         <i class="icon ion-ios-arrow-back"></i>{{ "btn_prev" | translate}}
+<<<<<<< HEAD
         </a>
 
         <a class="tab-item" href="#" ng-click="soundControl()">
           <i class="icon ion-play" ng-show="playflag"></i>
           <i class="icon ion-pause" ng-hide="playflag"></i>
+=======
+>>>>>>> origin/master
         </a>
 
         <a class="tab-item" href="#" ng-click="soundSwitch()">

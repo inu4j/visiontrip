@@ -1,3 +1,40 @@
+<<<<<<< HEAD
+=======
+<ion-view view-title=" {{'language_title' | translate}}">
+  <ion-content ng-controller="lang_list">
+<div class="list">
+  <ion-list>
+    <div class="item item-divider"> 
+        {{"language_general" | translate}}
+    </div> 
+    <ion-item class="item item-avatar" href="#" ng-repeat="lang in langs1"  ng-click="play({{lang.id}})">  
+        <img src="img/play-icon2.png">
+        <h2>{{lang.myLang}}</h2>
+        <p>{{langs1_sound[$index].lang_sound }}</p> 
+    </ion-item>
+
+    <div class="item item-divider"> 
+         {{"language_bless" | translate}}
+    </div> 
+    <ion-item class="item item-avatar" ng-repeat="lang in langs2" href="#" ng-click="play({{lang.id}})">  
+        <img src="img/play-icon2.png">
+        <h2>{{lang.myLang}}</h2>
+        <p>{{langs2_sound[$index].lang_sound }}</p>
+    </ion-item>
+
+    <div class="item item-divider"> 
+         {{"language_evangel" | translate}}
+    </div> 
+    <ion-item class="item item-avatar" ng-repeat="lang in langs3" href="#" ng-click="play({{lang.id}})">  
+        <img src="img/play-icon2.png">
+        <h2>{{lang.myLang}}</h2>
+        <p>{{langs3_sound[$index].lang_sound }}</p>
+    </ion-item>
+
+ 
+  </ion-list>
+</div>
+>>>>>>> origin/master
 
 <ion-view view-title=" {{'language_title' | translate}}" ng-controller="lang_list" cache-view="false" >
 

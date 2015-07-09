@@ -23,6 +23,7 @@ var self_module = angular.module('starter', ['ionic', 'starter.controllers', 'ng
       StatusBar.styleLightContent();
       StatusBar.show();
     }
+<<<<<<< HEAD
 
     
     //app version 구하기
@@ -31,6 +32,9 @@ var self_module = angular.module('starter', ['ionic', 'starter.controllers', 'ng
     //     appVersion = version;
     //   });
     // }
+=======
+  
+>>>>>>> origin/master
 // IOS 상단바 / Device text 를 white 로
   // styles: Default : 0, LightContent: 1, BlackTranslucent: 2, BlackOpaque: 3
     

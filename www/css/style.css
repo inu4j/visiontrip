@@ -49,6 +49,10 @@ input, button, select, textarea {
 }
 
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> origin/master
 a:link {
 	text-decoration: none;
 }
@@ -65,18 +69,34 @@ a:active {
 /* top bar */
 .bar.bar-clear{
   background-color:rgba(0, 0 , 0 ,0.4) !important;
+<<<<<<< HEAD
 }
 
 .bar-background {
   background-color: none !important;
   background-size: 100% 100%;
+=======
+
+}
+
+
+.has-km-image {
+  background-color: none !important;
+  background: url('../img/menu_back_km.png') repeat left top !important;
+  background-size: 100% 100%;
+
+>>>>>>> origin/master
 }
 
 /* Menu Title Bar */
 .title_top{
 	padding-top: 0px;
+<<<<<<< HEAD
   	top:-7px !important;
   	font-size:15px !important;
+=======
+  	top:-7px !important;;
+>>>>>>> origin/master
 }
 
 /* ion item -  Customizing */
@@ -85,6 +105,10 @@ a:active {
   padding-bottom:8px !important;
 }
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> origin/master
 .div_item{
 	margin-top: 5px;
 	margin-bottom: 5px;
@@ -98,6 +122,7 @@ a:active {
 	vertical-align: middle;
 }
 
+<<<<<<< HEAD
 
 .item-avatar a {
   padding-right: 10px !important;
@@ -148,6 +173,10 @@ a:active {
 
 
 /* home 용 이미지 & Text */
+=======
+/* home 용 이미지 & Text */
+
+>>>>>>> origin/master
  #back{
 	 background-color: white;
 	 height: 100%;
@@ -157,8 +186,13 @@ a:active {
 #container {
 	display: table;
 	width: 100%;
+<<<<<<< HEAD
 	position: relative; 
 	overflow: hidden;
+=======
+	 #position: relative; 
+	 overflow: hidden;
+>>>>>>> origin/master
 }
 
 #margin_zero {
@@ -207,7 +241,11 @@ a:active {
 
 }
 
+<<<<<<< HEAD
 .zero_margin{
+=======
+.row_margin{
+>>>>>>> origin/master
 	margin: 0px;
 	padding: 0px !important;
 }
@@ -235,12 +273,15 @@ a:active {
   margin-bottom: 10px;
 }
 
+<<<<<<< HEAD
 /* Image Effect*/
 .imageblock{
     -webkit-box-shadow: 3px 3px 10px #3C3C3C !important;
     box-shadow: 3px 3px 10px #3C3C3C !important;
     }
 
+=======
+>>>>>>> origin/master
 /* slide 관련 css */
 .slider {
   height:100%;

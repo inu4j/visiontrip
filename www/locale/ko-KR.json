@@ -14,6 +14,7 @@
       "btn_next" : "다음",
       "praise_title":"찬양",
       "praise_word_onimage" : "주님을 찬양합시다.",
+<<<<<<< HEAD
 
       "BasicWord_title":"일반단어",
   
@@ -275,6 +276,8 @@
       ],      
 
 
+=======
+>>>>>>> origin/master
       "language_title":"회화",
       "language_general":"일반회화",
       "language_bless":"선교회화",

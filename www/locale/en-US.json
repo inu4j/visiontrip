@@ -14,6 +14,7 @@
       "btn_next" : "Next",
       "praise_title":"Praise",
       "praise_word_onimage" : "Praise the Lord ",
+<<<<<<< HEAD
       "BasicWord_title":"Basic Word",
       "BasicWord":[
             {"category":"인칭","data":[
@@ -84,6 +85,8 @@
 
 
 
+=======
+>>>>>>> origin/master
       "language_title":"Conversation",
       "language_general":"General Conversation",
       "language_bless":"Mission Conversation",
