@@ -7,7 +7,7 @@
 
 var self_module = angular.module('starter', ['ionic', 'starter.controllers', 'ngCordova', 'ngCookies','pascalprecht.translate'])
 
-.run(function($ionicPlatform, $translate, $translateLocalStorage ) {
+.run(function($ionicPlatform, $translate, $translateLocalStorage, $ionicPopup, $cordovaNetwork) {
   $ionicPlatform.ready(function() {
     // Hide the accessory bar by default (remove this to show the accessory bar above the keyboard
     // for form inputs)
@@ -21,6 +21,8 @@ var self_module = angular.module('starter', ['ionic', 'starter.controllers', 'ng
       StatusBar.styleLightContent();
       StatusBar.show();
     }
+     
+    
   
 // IOS 상단바 / Device text 를 white 로
   // styles: Default : 0, LightContent: 1, BlackTranslucent: 2, BlackOpaque: 3
