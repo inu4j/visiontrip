@@ -1,0 +1,5 @@
+ioinic plugin add 파일명 형식으로 플러그인 설치
+----파일명----
+org.apache.cordova.file // 파일 제어
+org.apache.cordova.network-information // 네트워크 정보
+org.apache.cordova.file-transfer // 파일 전송
